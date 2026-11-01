@@ -1,0 +1,75 @@
+name: freedom
+description: "Your debt-freedom companion."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.3.3
+
+  # UI / fonts / motion / charts
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.0
+  fl_chart: ^0.69.2
+  gap: ^3.0.1
+  lucide_icons_flutter: ^3.0.0
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.5.1
+  confetti: ^0.7.0
+
+  # Home-screen widget bridge
+  home_widget: ^0.7.0
+
+  # Open external links
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+  image: ^4.5.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/freedom_app_logo_raw.png"
+  remove_alpha_ios: true
+  background_color_ios: "#000000"
+  adaptive_icon_background: "#000000"
+  adaptive_icon_foreground: "assets/logo/freedom_app_logo_raw.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#000000"
+  image: "assets/logo/freedom_app_logo_rounded.png"
+  color_dark: "#000000"
+  image_dark: "assets/logo/freedom_app_logo_rounded.png"
+  android_12:
+    color: "#000000"
+    image: "assets/logo/freedom_app_logo_rounded.png"
+    color_dark: "#000000"
+    image_dark: "assets/logo/freedom_app_logo_rounded.png"
+  ios_content_mode: center
+  fullscreen: false
